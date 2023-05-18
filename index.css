@@ -1,10 +1,10 @@
 main {
     display: grid;
-    grid-template: 75px 1fr / 250px 1fr;
+    grid-template: 1fr 8fr / 250px 1fr;
 }
 
 img {
-    width: 20px;
+    width: 25px;
     height: auto;
 }
 
@@ -17,10 +17,19 @@ img {
     justify-content: start;
     gap: 40px;
     padding: 15px;
+    color: whitesmoke;
 }
 
-.logo, .sidebar-bottom, .sidebar-middle {
-    border: 2px solid red;
+.sidebar img {
+    filter: invert(1)
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar-bottom, .sidebar-middle {
     display: flex;
     flex-direction: column;
 }
@@ -34,18 +43,49 @@ section {
     background-color: #e2e8f0;
     border-color: 2px solid grey;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: 1fr 1fr / 1.5fr 1fr;
     grid-column: 2 / 3;
+}
+
+header {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
 }
 
 .header-row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: -20px 10px;
+    line-height: 2px;
+}
+
+.header-row>div {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar {
+    min-width: 100px;
+    width: 400px;
+    border-radius: 10px;
+    height: 22px;
+}
+
+.buttons {
+
 }
 
 .projects {
     margin-left: 15px;
     grid-row: 1 / 6;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.projects>p {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .projects-interface {
@@ -66,7 +106,21 @@ section {
     width: 200px
 }
 
-.annoucements{
+.trending{
+    border: 2px solid #d1d7dd;
+    background-color: whitesmoke;
+    box-shadow: 1px #d1d7dd;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.trending-row {
+    display: flex;
+    gap: 10px;
+    line-height: 2px;
 }
 
 .announcement{
