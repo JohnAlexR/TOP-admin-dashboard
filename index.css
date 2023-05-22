@@ -110,7 +110,7 @@ header {
 
 .projects-interface {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px 50px;
     box-sizing: border-box;
 }
@@ -122,8 +122,8 @@ header {
     border-left: 4px solid #f0b329;
     border-radius: 10px;
     padding: 10px;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     position: relative;
 }
 
@@ -167,7 +167,9 @@ header {
     display: grid;
     gap: 5px;
     margin-left: 15px;
-    align-content: center;
+    margin-top: 15px;
+    align-content: start;
+    border: 1px solid #1a92d3;
 }
 
 .trending {
