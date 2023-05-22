@@ -59,8 +59,9 @@ section {
     background-color: #e2e8f0;
     border-color: 2px solid grey;
     display: grid;
-    grid-template: 1fr 1fr / 1.5fr 1fr;
+    grid-template: 300px 300px / 2fr 1fr;
     grid-column: 2 / 3;
+    gap: 20px;
 }
 
 header {
@@ -110,9 +111,10 @@ header {
 
 .projects-interface {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px 50px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 20px 40px;
     box-sizing: border-box;
+    justify-items: left;
 }
 
 .card {
@@ -122,8 +124,8 @@ header {
     border-left: 4px solid #f0b329;
     border-radius: 10px;
     padding: 10px;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     position: relative;
 }
 
@@ -169,14 +171,14 @@ header {
     margin-left: 15px;
     margin-top: 15px;
     align-content: start;
-    border: 1px solid #1a92d3;
 }
 
 .trending {
     display: grid;
     gap: 5px;
     align-content: start;
-    justify-content: center;
+    margin: 10px;
+    justify-content: stretch;
     margin-left: 15px;
 }
 
